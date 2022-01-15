@@ -237,6 +237,9 @@ html, body {
       padding-top: 20px;
       padding-bottom: 15px;
   }
+  .time-sent{
+      color:var(--var-fontcolor)
+  }
 img {
     width: 100%;
 }

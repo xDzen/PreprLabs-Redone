@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header class="navbar">
     <!-- Top Navigation Menu -->
@@ -14,13 +15,21 @@
         <i class="fa fa-bars"></i>
     </a>
     <!-- Navigation links (hidden by default) -->
+    <div class="search-button">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search..">
+    </div>
     
     </div>
+    
 </header>
 <div id="myLinks">
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
+    <button onclick="darkMode()">Dark Mode</button>
 </div>
 
 <section class="dashboard">
@@ -54,16 +63,24 @@
                                 <div class="aria-name">Challenges</div>
                                 <div class="tr">
                                     <div class="challenge-picture">
+                                        <a href="">
                                         <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/YjxBO2QEvRfECmcPupDJo1Obt.png">
+                                        </a>
                                     </div>
                                     <div class="challenge-picture">
+                                        <a href="">
                                         <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/PjBmzWyf30SrnHi8zw5GK6tSF.png">
+                                        </a>
                                     </div>
                                     <div class="challenge-picture">
+                                        <a href="">
                                         <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/N6iyHRXRHS90XPqKYD7zY434Z.png">
+                                        </a>
                                     </div>
                                     <div class="challenge-picture">
+                                        <a href="">
                                         <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/3h4UwxgX9VOnlE81YqLVri3gd.png">
+                                        </a>
                                     </div>
                                 </div>
 
@@ -78,10 +95,11 @@
                             <div class="float-child-picture">
                                 <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/MW6luFvNXTF7dHaEfFARbmokH.png" alt="Web Manager Lab Thumbnail">
                             </div>
-                            <div class="float-child-lab-description">The web manager can be thought of as the general manager of the web team and the last point of contact before the more corporate roles. They oversee all of the other departments on the web team and because of this will have some general knowledge on how to work the majority of them. There might be a variation of what this position is called but the purpose remains the same: ensure quality content and functionality of the web content and lead a successful web team.  
-                                The web manager is responsible for the delegation of duties among the team and because of this carries a great deal of responsibility depending on how the team performs. One of the goals of most web managers is to ensure that on a daily basis, all of the web components are all functioning at the most basic acceptable levels. Like managers in other industries, they are driven by getting positive results regarding feedback, increased monetary profits and cost reduction and also, high employee performance.
+                            <div class="float-child-lab-description">According to the U.S. Bureau of Labor Statistics, in the current economy, Americans shift jobs every 4-5 years, which translates into 8-10 job transitions, including several career changes, over one’s life time. With competition for jobs on the rise, a person’s continuing employability and career success are increasingly defined by his or her mastery of individual career development and the ability to effectively "manage oneself" (P. Drucker). In this course, you will learn how to think strategically and professionally about your career self-management.
+                                Through this course you'll develop an objective, external view of your marketable skills as a solid foundation for building a strong career brand. In particular, you'll be able to: - explain why developing a protean and boundaryless career perspective based on transferable (portable) skills is advantageous for continuing employability and career growth.
+                                your area of interest and examine practices of evidence-based, data-driven competitive employee selection; -implement your newly developed skills for crafting effective selection criteria statements and refining your job applications.
                             </div>
-                                <!-- source = https://dynomapper.com/blog/46-business/488-roles-and-responsibilities-of-web-teams -->
+                                <!-- source = https://www.coursera.org/lecture/strategic-career-self-management/career-development-lab-an-introduction-J8EpA-->
                             <div class="challenge-containers-table">
                                 <div class="aria-name">Challenges</div>
                                 <div class="tr">
@@ -123,15 +141,76 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>  
                 <div class="inbox-card">
-                    <div class="card-header">
-                        Inbox
-                    </div>
+                   
+                    <div class="card-header">Notifications</div>
                     <div class="card-list">
+                         <!--First message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/organisation/YlyHSvMYpa6m2g22lybhG5ahOZMiLiABF4q8WEh0.png">
+                            </div>
+                            <div class="sender">PreprLabs</div>
+                            <div class="time-sent">3 days ago</div>
+                            <div class="message">Hello participants! We hope that you are all settling back into your team workflows after the holidays. Just as a reminder, by January 19th we’re looking to have your team’s Project submission, your completed Digital Capabilities Lab of choice, and all seven Challenges associated with the Career Planning Lab. For your team’s Project, remember that only one team member per team needs to submit the project, but by inviting their other team members to that Project it will show up on everyone’s PreprLabs user profile and everyone will get credit! Most of you have already done this... </div>
+                            <div class="breakline"> </div>
+                        </div>
+                        <!--Second message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/organisation/YlyHSvMYpa6m2g22lybhG5ahOZMiLiABF4q8WEh0.png">
+                            </div>
+                            <div class="sender">PreprLabs</div>
+                            <div class="time-sent">5 days ago</div>
+                            <div class="message">Welcome to Week 2! Several teams were looking for a workload benchmark last week, so I figured I'd share with everyone... By the end of today you should have a fairly well-defined idea for your team's Business Challenge and you should be documenting your brainstorming on your P.I.E. Canvases in Mural. There was one team that I didn't get to last week before they disappeared on Friday that still need access to their Mural but I can't recall who. Please reach out to me for this link or I'll provide it later.... </div>
+                            <div class="breakline"> </div>
+                        </div>
+                        <!--Third message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/organisation/YlyHSvMYpa6m2g22lybhG5ahOZMiLiABF4q8WEh0.png">
+                            </div>
+                            <div class="sender">PreprLabs</div>
+                            <div class="time-sent">1 week ago</div>
+                            <div class="message">Has invited you to join the Career Planning Lab.</div>
+                            <div class="breakline"> </div>
+                        </div>
+                        <!--Fourth message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/front/img/default-user.png">
+                            </div>
+                            <div class="sender">Project Member #1</div>
+                            <div class="time-sent">1 week ago</div>
+                            <div class="message">Hey do you have the link for the figma project.</div>
+                            <div class="breakline"> </div>
+                        </div>
+                        <!--Fifth message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/front/img/default-user.png">
+                            </div>
+                            <div class="sender">Project Member #2</div>
+                            <div class="time-sent">2 weeks ago</div>
+                            <div class="message">Writing's not easy. That's why Grammarly can help. This sentence is grammatically correct, but it's wordy, and hard to read. It undermines the writer's message and the word choice is bland. Grammarly's cutting edge technology helps you craft compelling, understandable writing that makes an impact on your reader. Much better. Are you ready to give it a try? Installation is simple and free. Visit Grammarly.com today!</div>
+                            <div class="breakline"> </div>
+                        </div>
+                        <!--Sixth message-->
+                        <div class="notification-container">
+                            <div class="profile-pic">
+                                <img src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/front/img/default-user.png">
+                            </div>
+                            <div class="sender">Project Member #3</div>
+                            <div class="time-sent">2 weeks ago</div>
+                            <div class="message">
+                                The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.</div>
+                            <div class="breakline"> </div>
+                        </div>
                     </div>
+                    
+
                 </div>  
             </div>
         </div>
@@ -148,5 +227,26 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
+}
+</script>
+
+<script>
+/*Toggle between light/dark mode*/
+let darkModeBoolean = false;
+function darkMode(){
+    const root = document.documentElement;
+    
+    if(!(darkModeBoolean)){
+        root.style.setProperty('--var-bg', 'black');
+        root.style.setProperty('--var-fontcolor', 'white');
+        root.style.setProperty('--var-2bg', "#333")
+        darkModeBoolean = true;
+    }
+    else{
+        root.style.setProperty('--var-bg', 'white');
+        root.style.setProperty('--var-fontcolor', "#727D92");
+        root.style.setProperty('--var-2bg', "#F3F7FC")
+        darkModeBoolean = false;
+    }
 }
 </script>

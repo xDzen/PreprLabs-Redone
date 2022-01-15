@@ -159,6 +159,7 @@ html, body {
 
   .float-lab-container {
     padding: 20px;
+    padding-bottom: 10px;
     /*border: 3px solid black;*/
     overflow: auto;
   }
@@ -176,10 +177,28 @@ html, body {
       /*border: 3px solid red;*/
       
   }
+  .challenge-containers-table{
+      border: 1px solid #C6CACC;
+      border-radius: 10px;
+      overflow-x: scroll;
+      white-space:no-wrap;
+      display:table;
+  }
   .aria-name{
-      color: #727D92;
-      font-size: 24px;
-      text-align: center;
+      color: #27AE60;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px;
+      padding-bottom: 0px;
+  }
+  .tr{
+      display:table-row;
+  }
+  .challenge-picture{
+      width: 20%;
+      float:left;
+      padding: 10px;
+      display:table-cell;
   }
 
 img {

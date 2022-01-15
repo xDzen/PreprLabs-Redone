@@ -1,0 +1,187 @@
+html, body {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body > * {
+    flex-shrink: 0;
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  #myLinks {
+    display: none;
+    float: left;
+    background-color: white;
+    transition: left 1s;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    float: left;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+    float: left;
+  }
+  
+  .dashboard {
+      background-color: #F3F7FC;
+      padding-top: 16px;
+      margin: 0px;
+      height: 93%;
+      overflow: overlay;
+  }
+  .inner-dashboard {
+      margin-left:16px;
+      margin-right:16px;
+      padding: 16px;
+      overflow: overlay;
+      background-color: white;
+      
+  }
+  
+  .main-card {
+      background-color: white;
+      box-sizing: border-box;
+
+  }
+  .inbox-card{
+    border-radius: 10px;
+    /*border: 2px solid #73AD21;*/
+    /*border: 1px solid black;*/
+    box-shadow: 1px 1px 2px 2px #C6CACC;
+
+    width: 39%;
+    height: 820px;
+    margin-left: 10px;
+    float: left;
+    overflow:hidden;
+    display: flex;
+    flex-direction:column;
+  }
+
+  .labs-card {
+    border-radius: 10px;
+    /*border: 2px solid #73AD21;*/
+    /*border: 1px solid black;*/
+    box-shadow: 1px 1px 2px 2px #C6CACC;
+    width: 60%;
+    height: 820px;
+    float:left;
+    overflow:hidden;
+    display: flex;
+    flex-direction:column;
+  }
+
+
+  .card-header {
+      font-weight: bold;
+      font-size: 48px;
+      box-sizing: border-box;
+      color: #27AE60;
+      padding: 10px;
+      padding-left: 20px;
+      border-bottom: 1px solid #C6CACC;
+  }
+
+
+  .labs-card-nav {
+    box-shadow: 1px 1px 2px 2px #C6CACC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 102%;
+    padding: 5px;
+    margin-left: -10px;
+  }
+  
+  .card-list{
+      overflow:scroll;
+      overflow-x: hidden;
+  }
+
+    .card-list::-webkit-scrollbar{
+        width: 12px;
+        border-bottom-right-radius: 10px;
+    }
+    .card-list::-webkit-scrollbar-track {
+        background: #C6CACC;        /* color of the tracking area */
+        border-bottom-right-radius: 10px;
+    }
+
+    .card-list::-webkit-scrollbar-thumb {
+        background-color: #727D92;    /* color of the scroll thumb */
+
+        border-bottom-right-radius: 10px;      /* roundness of the scroll thumb */
+        /*border: 3px solid #727D92;  /* creates padding around scroll thumb */
+    }
+
+  .lab-name{
+    font-weight: bold;
+    font-size: 24px;
+    box-sizing: border-box;
+    color: #27AE60;
+    padding-bottom: 10px;
+    /*border: 3px solid black;*/
+  }
+
+  .float-lab-container {
+    padding: 20px;
+    /*border: 3px solid black;*/
+    overflow: auto;
+  }
+  .float-child-picture{
+      float: left; 
+      width: 30%;
+      /*border: 3px solid red;*/
+  }
+  .float-child-lab-description{
+      padding: 20px;
+      padding-top: 5px;
+      float: left;
+      color: #727D92;
+      width: 65%;
+      /*border: 3px solid red;*/
+      
+  }
+  .aria-name{
+      color: #727D92;
+      font-size: 24px;
+      text-align: center;
+  }
+
+img {
+    width: 100%;
+}

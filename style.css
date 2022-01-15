@@ -26,6 +26,22 @@ html, body {
     font-size: 24px;
     padding: 10px;
   }
+
+  .search-bar{
+      float: right;
+      padding: 10px;
+  }
+  .search-button{
+      background-color: black;
+      color: white;
+      float: right;
+      padding: 10px;
+      
+  }
+  .search-button:hover{
+      background-color: white;
+      color: black;
+  }
   
   /* Style navigation menu links */
   .topnav a {
@@ -180,8 +196,8 @@ html, body {
   .challenge-containers-table{
       border: 1px solid #C6CACC;
       border-radius: 10px;
-      overflow-x: scroll;
-      white-space:no-wrap;
+      overflow: scroll;
+      white-space:nowrap;
       display:table;
   }
   .aria-name{
@@ -201,6 +217,32 @@ html, body {
       display:table-cell;
   }
 
+  .sender{
+      color:#27AE60;
+      padding: 20px;
+      padding-bottom: 0px;
+  }
+  .message{
+      color:#727D92;
+      padding: 10px;
+
+      padding-top: 20px;
+      padding-bottom: 15px;
+  }
 img {
     width: 100%;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 50px;
+    float:left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-header{
+    float:left;
+}
+.breakline{
+    border-top: 1px solid #C6CACC;
 }
